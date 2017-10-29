@@ -10,21 +10,23 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/registration_header"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/name"
         app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editText"
@@ -43,10 +45,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/age"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/editText2"
@@ -55,7 +58,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,10 +68,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/country"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -86,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:onClick="signUp"
         android:text="@string/sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
