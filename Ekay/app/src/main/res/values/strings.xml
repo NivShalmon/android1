@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">E-kay</string>
+
+    <!-- registration form strings -->
+    <string name="registration_header">Registration Form</string>
+    <string name="name">Full Name:</string>
+    <string name="age">Age:</string>
+    <string name="country">Country:</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- countries -->
+    <string-array name="countries">
+        <item>chelestra</item>
+        <item>Arianus</item>
+        <item>Pryan</item>
+        <item>Abarrach</item>
+        <item>Nexus</item>
+    </string-array>
+
+</resources>
