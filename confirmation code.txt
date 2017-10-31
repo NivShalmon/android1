@@ -1,0 +1,11 @@
+Your assignment has been successfully submitted.
+Transaction summary:
+Date:	31/10/2017, 09:58:08
+Assignment:	HW1
+Course:	236503 (Project in CS Advanced Programming A)
+Semester:	Winter 2017-2018
+Submitted by:	208461871
+File name:	android1.zip
+File size:	1,360K
+
+Confirmation code:	236503-208698374-7367056
