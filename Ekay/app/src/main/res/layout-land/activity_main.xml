@@ -32,6 +32,7 @@
     <EditText
         android:id="@+id/editText"
         style="@style/AppTheme"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -56,12 +57,14 @@
     <EditText
         android:id="@+id/editText2"
         style="@style/AppTheme"
-        android:layout_width="288dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -78,12 +81,14 @@
     <Spinner
         android:id="@+id/spinner"
         style="@style/AppTheme"
-        android:layout_width="272dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:popupBackground="@color/primary_light"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/editText" />
 
     <Button
