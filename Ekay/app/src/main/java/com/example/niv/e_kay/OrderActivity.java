@@ -18,6 +18,6 @@ public class OrderActivity extends AppCompatActivity {
         String username = intent.getStringExtra(USERNAME);
 
         TextView textView = findViewById(R.id.textView5);
-        textView.setText(R.string.welcome_prefix + username + R.string.welcome_postfix);
+        textView.setText(getString(R.string.welcome_prefix) + username + getString(R.string.welcome_postfix));
     }
 }

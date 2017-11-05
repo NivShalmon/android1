@@ -11,7 +11,7 @@
 
     <!-- countries -->
     <string-array name="countries">
-        <item>chelestra</item>
+        <item>Chelestra</item>
         <item>Arianus</item>
         <item>Pryan</item>
         <item>Abarrach</item>
@@ -19,7 +19,7 @@
     </string-array>
 
     <!-- order form strings -->
-    <string name="welcome_prefix">Welcome </string>
+    <string name="welcome_prefix">Welcome \t</string>
     <string name="welcome_postfix">!</string>
     <string name="default_welcome_message">Welcome!</string>
 
