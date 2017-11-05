@@ -1,5 +1,6 @@
 package com.example.niv.e_kay;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signUp(View view){
-        Toast.makeText(getApplicationContext(), R.string.sign_up_message, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, OrderActivity.class);
+        EditText name = findViewById(R.id.editText);
+        String username = name.getText().toString();
+        intent.putExtra(OrderActivity.USERNAME,username);
+        startActivity(intent);
     }
 }

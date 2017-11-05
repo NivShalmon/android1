@@ -18,4 +18,9 @@
         <item>Nexus</item>
     </string-array>
 
+    <!-- order form strings -->
+    <string name="welcome_prefix">Welcome </string>
+    <string name="welcome_postfix">!</string>
+    <string name="default_welcome_message">Welcome!</string>
+
 </resources>
