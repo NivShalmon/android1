@@ -3,6 +3,7 @@ package com.example.niv.e_kay;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -10,7 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
         EditText age = findViewById(R.id.editText2);
         name.addTextChangedListener(new ButtonWatcher());
         age.addTextChangedListener(new ButtonWatcher());
+
+        Toolbar tb = findViewById(R.id.my_toolbar);
+        tb.setTitle(R.string.app_name);
     }
 
     public void signUp(View view){

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -38,6 +39,9 @@ public class OrderActivity extends AppCompatActivity {
                 R.array.devices, android.R.layout.simple_list_item_single_choice);
         listView.setAdapter(adapter);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+
+        Toolbar tb = findViewById(R.id.my_toolbar);
+        tb.setTitle(R.string.order_action_bar_title);
     }
 
     public void order(View view) {
