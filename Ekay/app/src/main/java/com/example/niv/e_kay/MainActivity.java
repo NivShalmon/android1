@@ -80,5 +80,6 @@ public class MainActivity extends AppCompatActivity {
         String username = name.getText().toString();
         intent.putExtra(OrderActivity.USERNAME,username);
         startActivity(intent);
+        finish();
     }
 }
