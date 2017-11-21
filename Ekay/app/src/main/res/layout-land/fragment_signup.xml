@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_light"
-    tools:context="com.example.niv.e_kay.LoginFragment">
+    tools:context="com.example.niv.e_kay.SignUpFragment">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"

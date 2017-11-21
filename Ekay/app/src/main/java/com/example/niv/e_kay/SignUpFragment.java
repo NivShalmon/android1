@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 
-public class LoginFragment extends Fragment {
+public class SignUpFragment extends Fragment {
 
     private onSighUpListener signUpCallBack;
     private OnEditListener editCallback;
@@ -80,7 +80,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_login, container, false);
+        View v = inflater.inflate(R.layout.fragment_signup, container, false);
 
         Spinner spinner = v.findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),//

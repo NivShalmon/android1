@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.niv.e_kay.LoginFragment.*;
+import com.example.niv.e_kay.SignUpFragment.*;
 
 public class MainActivity extends AppCompatActivity implements onSighUpListener, OnEditListener {
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements onSighUpListener,
             if (savedInstanceState != null) {
                 return;
             }
-            LoginFragment f = new LoginFragment();
+            SignUpFragment f = new SignUpFragment();
             getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, f).commit();
         }
     }
