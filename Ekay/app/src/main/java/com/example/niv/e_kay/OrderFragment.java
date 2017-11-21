@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -28,19 +29,27 @@ public class OrderFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_order, container, false);
+        final View v = inflater.inflate(R.layout.fragment_order, container, false);
 
         welcomeMessage = v.findViewById(R.id.textView5);
         setUsername(initialUserName);
 
-        ListView listView = v.findViewById(R.id.listView);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(v.getContext(),//
+        final ListView listView = v.findViewById(R.id.listView);
+        final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(v.getContext(),//
                 R.array.devices, android.R.layout.simple_list_item_single_choice);
         listView.setAdapter(adapter);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        Button b = v.findViewById(R.id.button2);
+        final Button b = v.findViewById(R.id.button2);
         b.setOnClickListener(new OrderListener(v));
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                b.setText("order " + (String) listView.getItemAtPosition(position));
+            }
+        });
 
         Toolbar tb = v.findViewById(R.id.my_toolbar);
         tb.setTitle(R.string.order_action_bar_title);
@@ -63,7 +72,7 @@ public class OrderFragment extends Fragment {
         }
 
         @Override
-        public void onClick(@SuppressWarnings("Unused") View _) {
+        public void onClick(@SuppressWarnings("Unused") View view) {
             ListView lv = v.findViewById(R.id.listView);
             if (lv == null)
                 throw new RuntimeException(v.toString());

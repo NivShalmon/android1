@@ -18,10 +18,10 @@ import android.widget.Spinner;
 
 public class SignUpFragment extends Fragment {
 
-    private onSighUpListener signUpCallBack;
+    private onSignUpListener signUpCallBack;
     private OnEditListener editCallback;
 
-    public interface onSighUpListener {
+    public interface onSignUpListener {
         public void signUp(View v);
     }
 
@@ -109,10 +109,10 @@ public class SignUpFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         try {
-            signUpCallBack = (onSighUpListener) context;
+            signUpCallBack = (onSignUpListener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
-                    + " must implement onSighUpListener");
+                    + " must implement onSignUpListener");
         }
         try {
             editCallback = (OnEditListener) context;

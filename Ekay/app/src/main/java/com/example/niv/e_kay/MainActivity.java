@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.example.niv.e_kay.SignUpFragment.*;
 
-public class MainActivity extends AppCompatActivity implements onSighUpListener, OnEditListener {
+public class MainActivity extends AppCompatActivity implements onSignUpListener, OnEditListener {
 
     private String username = "";
 
