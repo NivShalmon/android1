@@ -35,6 +35,12 @@
         <item>Huawei</item>
     </string-array>
 
+    <!-- order alert dialog strings -->
+    <string name="order_alert_title">E-Kay</string>
+    <string name="order_alert_content_prefix">Approve order for\t</string>
+    <string name="order_alert_content_suffix">\?</string>
+    <string name="order_alert_positiveText">YES</string>
+    <string name="order_alert_negativeText">NO</string>
     <string name="order_sent">order sent!</string>
 
 </resources>
